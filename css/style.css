@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   background-color: rgb(24, 25, 26);
   color: rgb(16, 138, 228);
@@ -32,7 +31,6 @@ nav ul li a:hover{
    text-decoration: none;
   color:rgb(16, 138, 228);
 }
-
 .left {
   display: flex;
   justify-content: space-between;
@@ -54,16 +52,10 @@ nav ul li a:hover{
   margin: 5px;
   color: aliceblue;
 }
-.left a:link {
-  text-decoration: none;
-}
-.left a:visited {
+.left a{
   text-decoration: none;
 }
 .left a:hover {
-  text-decoration: none;
-}
-.left a:active {
   text-decoration: none;
 }
 .firstsection {
@@ -85,6 +77,9 @@ nav ul li a:hover{
 }
 .leftSection .focus {
   color: rgb(50, 157, 238);
+  font-weight: bold;
+}
+#element{
   font-weight: bold;
 }
 .leftSection .white {

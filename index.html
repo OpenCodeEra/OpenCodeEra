@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 
     <!-- linking External JavaScript -->
-    <script src=""></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/images/icon/favicon125x125.png" />
@@ -59,7 +59,8 @@
             <div class="leftSection">
                 <div class="white">
                     <span class="blue">Welcome! </span>Contributors,
-                    Elevate Your Impact with <span class="focus">Open Source</span> Innovation
+                    Elevate Your Impact with <span class="focus">Open Source</span>
+                    <span id="element"></span>
                 </div>
             </div>
             <div class="rightSection">
@@ -70,6 +71,15 @@
     <footer>
 
     </footer>
+
+
+    <!-- Setup for text animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Projects','Community','Innovation', 'Contribution'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
