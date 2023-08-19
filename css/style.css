@@ -67,7 +67,7 @@ nav ul li a:hover {
 .firstsection {
   display: flex;
   justify-content: space-around;
-  /* height: 90vh; */
+  height: 80vh;
 }
 .leftSection {
   display: flex;
@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 .rightSection img {
   width: 100%;
-  margin:0 0;
+  margin: 0 0;
 }
 .secondSection {
   display: flex;
@@ -103,19 +103,19 @@ nav ul li a:hover {
   height: 85vh;
   margin: auto;
 }
-.secondSection .rightSection{
+.secondSection .rightSection {
   width: 40%;
   margin: 150px 0;
 }
-.secondSection img{
+.secondSection img {
   width: 95%;
 }
-.secondSection h1{
+.secondSection h1 {
   font-size: 3rem;
   font-weight: bold;
   color: aliceblue;
 }
-.text-grey{
-  color:rgb(244, 188, 212);
+.text-grey {
+  color: rgb(244, 188, 212);
   font-size: 1.5rem;
 }
