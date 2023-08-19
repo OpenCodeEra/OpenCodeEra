@@ -7,6 +7,12 @@ body {
   color: rgb(16, 138, 228);
   font-family: "Poppins", sans-serif;
 }
+main hr {
+  border: 0;
+  background-color: aliceblue;
+  height: 0.8px;
+  margin: 28px 80px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -23,13 +29,13 @@ nav ul li {
   justify-content: center;
   margin: 0 30px;
 }
-nav ul li a{
-   text-decoration: none;
-  color:white;
+nav ul li a {
+  text-decoration: none;
+  color: white;
 }
-nav ul li a:hover{
-   text-decoration: none;
-  color:rgb(16, 138, 228);
+nav ul li a:hover {
+  text-decoration: none;
+  color: rgb(16, 138, 228);
 }
 .left {
   display: flex;
@@ -52,7 +58,7 @@ nav ul li a:hover{
   margin: 5px;
   color: aliceblue;
 }
-.left a{
+.left a {
   text-decoration: none;
 }
 .left a:hover {
@@ -61,12 +67,13 @@ nav ul li a:hover{
 .firstsection {
   display: flex;
   justify-content: space-around;
+  /* height: 90vh; */
 }
 .leftSection {
   display: flex;
   align-items: center;
-  width: 55%;
-  margin: 25px 50px;
+  width: 57%;
+  margin: 0 50px;
   color: floralwhite;
   font-size: 2.5rem;
 }
@@ -79,17 +86,36 @@ nav ul li a:hover{
   color: rgb(50, 157, 238);
   font-weight: bold;
 }
-#element{
+#element {
   font-weight: bold;
 }
 .leftSection .white {
   font-size: 2.5rem;
 }
-.rightSection {
-  color: rgb(16, 138, 228);
-  font-size: 2rem;
-}
 .rightSection img {
   width: 100%;
-  margin: 50px 0;
+  margin:0 0;
+}
+.secondSection {
+  display: flex;
+  align-content: space-around;
+  width: 90vw;
+  height: 85vh;
+  margin: auto;
+}
+.secondSection .rightSection{
+  width: 40%;
+  margin: 150px 0;
+}
+.secondSection img{
+  width: 95%;
+}
+.secondSection h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+.text-grey{
+  color:rgb(244, 188, 212);
+  font-size: 1.5rem;
 }
