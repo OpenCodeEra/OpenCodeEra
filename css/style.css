@@ -120,10 +120,20 @@ nav ul li a:hover {
   font-size: 1.5rem;
 }
 footer {
-  background-color: rgb(240, 185, 208);
-  height: 400px;
+  background-color:#242526;
+  height: 180px;
 }
 .footer {
   display: flex;
   padding: 20px 50px;
+  justify-content: space-evenly ;
 }
+.footer ul{
+    text-decoration: none;
+    list-style: none;
+}
+footer .footer-rights{
+  text-align: center;
+  color: grey;
+
+} 
