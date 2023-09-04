@@ -7,6 +7,9 @@ body {
   color: rgb(16, 138, 228);
   font-family: "Poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 main hr {
   border: 0;
   background-color: aliceblue;
