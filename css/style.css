@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
 }
-html, body {
-  scroll-behavior: smooth;
-}
 
 body {
   background-color: rgb(24, 25, 26);
