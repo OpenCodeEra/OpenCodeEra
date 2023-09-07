@@ -11,6 +11,9 @@ body {
   color: rgb(16, 138, 228);
   font-family: "Poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 main hr {
   border: 0;
   background-color: aliceblue;
@@ -80,18 +83,27 @@ nav ul li a:hover {
   margin: 0 50px;
   color: floralwhite;
   font-size: 2.5rem;
+  pointer-events: none;
 }
 .leftSection .blue {
   font-size: 3rem;
   font-weight: 100;
   color: rgb(17, 135, 223);
 }
-.leftSection .focus {
+.leftSection .focus-gradient {
   color: rgb(50, 157, 238);
   font-weight: bold;
+   background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
+  background-clip: text;
+  -webkit-background-clip : text ;
+  -webkit-text-fill-color: transparent;
 }
 #element {
   font-weight: bold;
+   background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
+   background-clip: text;
+   -webkit-background-clip : text ;
+  -webkit-text-fill-color: transparent;
 }
 .leftSection .white {
   font-size: 2.5rem;
@@ -106,6 +118,7 @@ nav ul li a:hover {
   width: 90vw;
   height: 85vh;
   margin: auto;
+  pointer-events: none;
 }
 .secondSection .rightSection {
   width: 40%;
@@ -119,9 +132,12 @@ nav ul li a:hover {
   font-weight: bold;
   color: aliceblue;
 }
-.text-grey {
-  color: rgb(244, 188, 212);
+.text-gradient-blue-white {
   font-size: 1.5rem;
+  background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
+  background-clip: text;
+  -webkit-background-clip : text ;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Style for the Contact Section */
