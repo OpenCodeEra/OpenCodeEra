@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(24, 25, 26);
   color: rgb(16, 138, 228);
@@ -119,6 +123,75 @@ nav ul li a:hover {
   color: rgb(244, 188, 212);
   font-size: 1.5rem;
 }
+
+/* Style for the Contact Section */
+.contactSection {
+  padding: 40px;
+  background-color: rgb(24, 25, 26);
+  text-align: center;
+}
+
+.contactSection h2 {
+  font-size: 28px;
+  color: rgb(50, 157, 238);
+  margin-bottom: 20px;
+}
+
+.contactSection p {
+  font-size: 16px;
+  color: rgb(50, 157, 238);
+  margin-bottom: 30px;
+}
+
+/* Style for the form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: rgb(50, 157, 238);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contactSection {
+      padding: 20px;
+  }
+  
+  form {
+      padding: 0 10px;
+  }
+}
+
 footer {
   background-color:#242526;
   height: 180px;
