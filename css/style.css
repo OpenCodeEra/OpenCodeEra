@@ -11,6 +11,10 @@ body {
 html{
   scroll-behavior: smooth;
 }
+header{
+  position: fixed;
+  width: 100%;
+}
 main hr {
   border: 0;
   background-color: aliceblue;
@@ -70,6 +74,7 @@ nav ul li a:hover {
 }
 .firstsection {
   display: flex;
+  padding-top: 20vh;
   justify-content: space-around;
   height: 80vh;
 }
