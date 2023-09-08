@@ -144,34 +144,42 @@ nav ul li a:hover {
 
 /* Style for the Contact Section */
 .contactSection {
-  padding: 40px;
+  padding: 130px;
   background-color: rgb(24, 25, 26);
   text-align: center;
 }
 
-.contactSection h2 {
-  font-size: 28px;
-  color: rgb(50, 157, 238);
+.contactSection div h2 {
+  font-size: 38px;
+  color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
 
-.contactSection p {
-  font-size: 16px;
+.contactSection div p {
+  font-size: 20px;
   color: rgb(50, 157, 238);
   margin-bottom: 30px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.contactContainer div {
+  max-width: 500px;
+}
+
+.contactContainer div img {
+  width: 80%;
+  object-fit: contain;
 }
 
 /* Style for the form */
 form {
   max-width: 500px;
-  margin: 0 auto;
-}
-
-form label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: rgb(50, 157, 238);
 }
 
 form input[type="text"],
@@ -179,7 +187,7 @@ form input[type="email"],
 form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
@@ -201,7 +209,8 @@ form button[type="submit"]:hover {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .contactSection {
+  .contactContainer {
+      display: block;
       padding: 20px;
   }
   
