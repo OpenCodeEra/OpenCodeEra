@@ -8,6 +8,20 @@ body {
   color: rgb(16, 138, 228);
   font-family: "Poppins", sans-serif;
 }
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #18191a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #329cee17
+  ;
+}
+
 html{
   scroll-behavior: smooth;
 }
