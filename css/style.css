@@ -24,9 +24,30 @@ body::-webkit-scrollbar-thumb {
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #18191a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #329cee17
+  ;
+}
+
+.header-push-down {
+  height: 8vh;
+  /* width: 100vw; */
+}
+
 header{
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
 }
 main hr {
@@ -40,7 +61,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background-color: rgb(36, 37, 38);
+  background-color: rgb(24, 25, 26);
+  padding: 0 40px;
 }
 nav ul {
   display: flex;
@@ -48,9 +70,13 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  justify-content: center;
   margin: 0 30px;
 }
+
+nav ul li[href="services.html"] {
+  margin-right: 80px;
+}
+
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -61,36 +87,34 @@ nav ul li a:hover {
 }
 .left {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .left img {
   height: 80px;
-  margin-left: 40px;
 }
 .left .blue {
   font-size: 2rem;
   font-weight: 100;
-  margin: 5px;
+  margin: 0 5px;
   color: rgb(17, 135, 223);
 }
 .left .white {
   font-size: 2rem;
   font-weight: 100;
-  margin: 5px;
+  margin: 0 5px;
   color: aliceblue;
 }
 .left a {
   text-decoration: none;
 }
-.left a:hover {
-  text-decoration: none;
-}
+
 .firstsection {
   display: flex;
-  padding-top: 20vh;
+  padding: 1.5vh 0;
   justify-content: space-around;
-  height: 80vh;
+  align-items: center;
+  height: 75vh;
 }
 .leftSection {
   display: flex;
@@ -126,7 +150,7 @@ nav ul li a:hover {
 }
 .rightSection img {
   width: 100%;
-  margin: 0 0;
+  margin: 0 0 0 50px;
 }
 .secondSection {
   display: flex;
