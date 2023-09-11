@@ -277,5 +277,16 @@ footer {
 footer .footer-rights{
   text-align: center;
   color: grey;
-
 } 
+.footer-third a{
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(24, 25, 26);;
+  color: white;
+  border-radius: 50%;
+  line-height: 47px;
+}
+
+
