@@ -259,6 +259,13 @@ form button[type="submit"]:hover {
   form {
       padding: 0 10px;
   }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer-fourth{
+    padding-top: 20px;
+  }
 }
 
 footer {
@@ -279,3 +286,18 @@ footer .footer-rights{
   color: grey;
 
 } 
+
+.footer-fourth{
+  display: flex;
+}
+.footer-fourth a{
+  display: flex;
+  align-items: center;
+}
+.footer-fourth a:hover img{
+  opacity: 0.5;
+}
+
+.footer-fourth a img {
+  width: 40px;
+}
