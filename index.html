@@ -32,7 +32,7 @@
 <body>
     <!-- This div pushes down header a little bit so that header is not sticky from start -->
     <div class="header-push-down"></div>
-    <header>
+    <header class="blur">
         <nav>
             <div class="left">
                 <img src="images/icon/icon.png" alt="OpenCodeEra logo" />
@@ -54,7 +54,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="blur">
         <section class="firstsection">
             <div class="leftSection">
                 <div class="white">
@@ -89,7 +89,7 @@
                     <img src="./images/illustrations/Get in touch.png" alt="Get In Touch">
                 </div>
                 <div>
-                    <form>
+                    <form id="messageForm">
                         <!-- <label for="name">Name:</label> -->
                         <input type="text" id="name" name="name" placeholder="Name" required>
         
@@ -99,16 +99,21 @@
                         <!-- <label for="message">Message:</label> -->
                         <textarea id="message" name="message" rows="8" placeholder="Message" required></textarea>
         
-                        <button type="submit">Submit</button>
+                        <button id="submit" type="submit" onclick="toggle('body')">Submit</button>
                     </form>
+                    
                 </div>
             </div>
-
-            
+     
         </section>
-
     </main>
-    <footer>
+    <div id="popup">
+        <h1>Email Contact Service Inactive</h1><br>
+        <p>We apologize for the inconvenience, but our email contact service is currently inactive. Please reach out to us through alternative communication methods such as social handles. Rest assured, any messages you intended to send via email are securely stored on your side, ready to be sent once the service resumes. Thank you for your understanding and patience.</p><br>
+        <button id="close" onclick="toggle()">Close</button>
+    </div>
+
+    <footer class="blur">
         <div class="footer">
             <div class="footer-first">
                 <h3>Open Code Era</h3>
@@ -142,13 +147,7 @@
             Copyright &#169 opencodeera.pages.dev | All Rights Reserved
         </div>
     </footer>
-    <!-- Setup for text animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Projects', 'Community', 'Innovation', 'Contribution'],
-            typeSpeed: 50,
-        });
-    </script>
+    <script src="./javascript/index.js"></script>
 </body>
 
 </html>

@@ -9,19 +9,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #18191a;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #329cee17
-  ;
-}
-
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -42,13 +29,13 @@ body::-webkit-scrollbar-thumb {
 
 .header-push-down {
   height: 8vh;
-  /* width: 100vw; */
 }
 
 header{
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 main hr {
   border: 0;
@@ -116,7 +103,7 @@ nav ul li a:hover {
   align-items: center;
   height: 75vh;
 }
-.leftSection {
+.firstsection .leftSection {
   display: flex;
   align-items: center;
   width: 57%;
@@ -154,18 +141,29 @@ nav ul li a:hover {
 }
 .secondSection {
   display: flex;
-  align-content: space-around;
-  width: 90vw;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
   height: 85vh;
   margin: auto;
   pointer-events: none;
 }
+.secondSection .leftSection {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin-right: -2%;
+  pointer-events: none;
+}
 .secondSection .rightSection {
-  width: 40%;
-  margin: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  margin-right: 2%;
 }
 .secondSection img {
-  width: 95%;
+  width: 100%;
 }
 .secondSection h1 {
   font-size: 3rem;
@@ -185,6 +183,7 @@ nav ul li a:hover {
   padding: 130px;
   background-color: rgb(24, 25, 26);
   text-align: center;
+  transition: 0.5s;
 }
 
 .contactSection div h2 {
@@ -235,7 +234,7 @@ form textarea {
   resize: none;
 }
 
-form button[type="submit"] {
+form button[type="submit"] , #close {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -245,8 +244,42 @@ form button[type="submit"] {
   cursor: pointer;
 }
 
-form button[type="submit"]:hover {
+form button[type="submit"]:hover , #close:hover {
   background-color: #0056b3;
+  transition: 0.15s;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+  padding: 40px;
+  box-shadow: 2px 2px 15px 0px #243f59;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#close {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blurred {
+  filter: blur(2px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /* Responsive styles */
