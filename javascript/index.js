@@ -28,21 +28,3 @@ function handleFormSubmit(event) {
 const formElement = document.getElementById('messageForm');
 
 formElement.addEventListener('submit', handleFormSubmit);
-
-const elements = document.getElementsByClassName('blur');
-
-function toggle(x) {
-  if (x) {
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].classList.add('blurred');
-    }
-    document.getElementById('popup').classList.add('active');  
-    document.getElementById('contact').scrollIntoView();  
-  }
-  else {
-    for (let i = 0; i < elements.length; i++) {
-      elements[i].classList.remove('blurred');
-    }
-    document.getElementById('popup').classList.remove('active');
-  }
-}
