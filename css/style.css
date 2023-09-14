@@ -3,10 +3,31 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(24, 25, 26);
   color: rgb(16, 138, 228);
   font-family: "Poppins", sans-serif;
+
+}
+
+img, .disable-selection ,br {
+  user-select: none;
+}
+
+h2::selection {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 136, 255, 0.25);
+}
+
+p::selection {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 136, 255, 0.2);
+
 }
 
 body::-webkit-scrollbar {
@@ -17,15 +38,6 @@ body::-webkit-scrollbar-track {
   background: #18191a;
 }
 
-body::-webkit-scrollbar-thumb {
-  background: #329cee17
-  ;
-}
-
-html{
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -50,12 +62,14 @@ header{
   top: 0;
   width: 100%;
 }
+
 main hr {
   border: 0;
   background-color: aliceblue;
   height: 0.8px;
   margin: 28px 80px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -64,10 +78,12 @@ nav {
   background-color: rgb(24, 25, 26);
   padding: 0 40px;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
   list-style: none;
   margin: 0 30px;
@@ -81,30 +97,36 @@ nav ul li a {
   text-decoration: none;
   color: white;
 }
+
 nav ul li a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
 }
+
 .left {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .left img {
   height: 80px;
 }
+
 .left .blue {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: rgb(17, 135, 223);
 }
+
 .left .white {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: aliceblue;
 }
+
 .left a {
   text-decoration: none;
 }
@@ -185,6 +207,12 @@ nav ul li a:hover {
   padding: 130px;
   background-color: rgb(24, 25, 26);
   text-align: center;
+  transition: 0.5s;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 8%;
+
 }
 
 .contactSection div h2 {
@@ -199,11 +227,9 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 
-.contactContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
+
+.leftContact {
+  width: 60%;
 }
 
 .contactContainer div {
