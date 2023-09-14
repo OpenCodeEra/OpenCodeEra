@@ -29,23 +29,21 @@ const formElement = document.getElementById('messageForm');
 
 formElement.addEventListener('submit', handleFormSubmit);
 
+const elements = document.getElementsByClassName('blur');
+
 function toggle(x) {
-  // if (x) {
-  //   document.getElementById('contact').classList.add('active');
-  //   document.getElementById('popup').classList.add('active');
-  // }
-  // else {
-  //   document.getElementById('contact').classList.remove('active');
-  //   document.getElementById('popup').classList.remove('active');
-  // }
-  
   if (x) {
-    document.getElementById('contact').classList.add('active');
-    document.getElementById('popup').classList.add('active');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.add('blurred');
+    }
+    document.getElementById('popup').classList.add('active');  
+    document.getElementById('contact').scrollIntoView();  
   }
   else {
-    document.getElementById('contact').classList.remove('active');
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].classList.remove('blurred');
+    }
     document.getElementById('popup').classList.remove('active');
   }
 }
-  
+

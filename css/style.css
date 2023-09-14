@@ -3,23 +3,34 @@
   padding: 0;
 }
 
+img, .disable-selection ,br {
+  user-select: none;
+}
+
+h2::selection {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 136, 255, 0.25);
+}
+
+p::selection {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 136, 255, 0.2);
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+
 body {
   background-color: rgb(24, 25, 26);
   color: rgb(16, 138, 228);
   font-family: "Poppins", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #18191a;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #329cee17
-  ;
 }
 
 html{
@@ -42,13 +53,13 @@ body::-webkit-scrollbar-thumb {
 
 .header-push-down {
   height: 8vh;
-  /* width: 100vw; */
 }
 
 header{
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 main hr {
   border: 0;
@@ -79,11 +90,12 @@ nav ul li[href="services.html"] {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.829);
 }
 nav ul li a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
+  transition: 0.4s;
 }
 .left {
   display: flex;
@@ -116,7 +128,7 @@ nav ul li a:hover {
   align-items: center;
   height: 75vh;
 }
-.leftSection {
+.firstsection .leftSection {
   display: flex;
   align-items: center;
   width: 57%;
@@ -154,18 +166,29 @@ nav ul li a:hover {
 }
 .secondSection {
   display: flex;
-  align-content: space-around;
-  width: 90vw;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
   height: 85vh;
   margin: auto;
   pointer-events: none;
 }
+.secondSection .leftSection {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin-right: -2%;
+  pointer-events: none;
+}
 .secondSection .rightSection {
-  width: 40%;
-  margin: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  margin-right: 2%;
 }
 .secondSection img {
-  width: 95%;
+  width: 100%;
 }
 .secondSection h1 {
   font-size: 3rem;
@@ -173,7 +196,6 @@ nav ul li a:hover {
   color: aliceblue;
 }
 .text-gradient-blue-white {
-  font-size: 1.5rem;
   background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
   background-clip: text;
   -webkit-background-clip : text ;
@@ -182,53 +204,56 @@ nav ul li a:hover {
 
 /* Style for the Contact Section */
 .contactSection {
-  padding: 130px;
-  background-color: rgb(24, 25, 26);
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 130px 10vw;
   text-align: center;
-}
-
-.contactSection div h2 {
-  font-size: 38px;
-  color: rgb(255, 255, 255);
-  margin-bottom: 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 8%;
+  transition: 0.5s;
 }
 
 .contactSection div p {
-  font-size: 20px;
-  color: rgb(50, 157, 238);
+  color: #8ddcff;
   margin-bottom: 30px;
 }
 
-.contactContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
+
+.leftContact {
+  width: 60%;
+}
+.rightContact {
+  width: 40%;
 }
 
-.contactContainer div {
-  max-width: 500px;
-}
-
-.contactContainer div img {
-  width: 80%;
+.leftContact img {
+  width: 50%;
   object-fit: contain;
-}
-
-/* Style for the form */
-form {
-  max-width: 500px;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
+  box-sizing: border-box;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 40px;
+  padding: 10px ;
+  margin-bottom: 32px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif, "Poppins", sans-serif;
+}
+
+input:focus, textarea:focus  {
+  outline: none;
+  border: 1.5px solid #007bff !important;
+}
+
+input::selection, textarea::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(12, 134, 153);
 }
 
 form textarea {
@@ -240,13 +265,54 @@ form button[type="submit"] , #close {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bolder;
   cursor: pointer;
+  user-select: none;
 }
 
 form button[type="submit"]:hover , #close:hover {
   background-color: #0056b3;
+  transition: 0.15s;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+  padding: 40px;
+  box-shadow: 2px 2px 15px 0px #243f59;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 2%;
+}
+
+#popup p {
+  font-size: 1rem;
+}
+
+#close {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blurred {
+  filter: blur(2px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 #popup {
@@ -326,7 +392,8 @@ footer .footer-rights{
   align-items: center;
 }
 .footer-fourth a:hover img{
-  opacity: 0.5;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 .footer-fourth a img {

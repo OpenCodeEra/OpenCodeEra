@@ -22,4 +22,5 @@ footer .footer-rights{
 .footer a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
+  transition: 0.5s;
 }
