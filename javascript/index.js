@@ -46,4 +46,3 @@ function toggle(x) {
     document.getElementById('popup').classList.remove('active');
   }
 }
-
