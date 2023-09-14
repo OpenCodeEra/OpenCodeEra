@@ -89,7 +89,7 @@
                     <img src="./images/illustrations/Get in touch.png" alt="Get In Touch">
                 </div>
                 <div>
-                    <form>
+                    <form id="messageForm">
                         <!-- <label for="name">Name:</label> -->
                         <input type="text" id="name" name="name" placeholder="Name" required>
         
@@ -99,7 +99,7 @@
                         <!-- <label for="message">Message:</label> -->
                         <textarea id="message" name="message" rows="8" placeholder="Message" required></textarea>
         
-                        <button type="submit">Submit</button>
+                        <button id="submit" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -142,13 +142,7 @@
             Copyright &#169 opencodeera.pages.dev | All Rights Reserved
         </div>
     </footer>
-    <!-- Setup for text animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Projects', 'Community', 'Innovation', 'Contribution'],
-            typeSpeed: 50,
-        });
-    </script>
+    <script src="./javascript/index.js"></script>
 </body>
 
 </html>
