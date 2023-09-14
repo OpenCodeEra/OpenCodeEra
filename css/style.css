@@ -233,8 +233,6 @@ nav ul li a:hover {
   object-fit: contain;
 }
 
-/* Style for the form */
-
 form input[type="text"],
 form input[type="email"],
 form textarea {
