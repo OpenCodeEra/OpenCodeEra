@@ -18,7 +18,7 @@ p::selection {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -140,10 +140,10 @@ nav ul li a:hover {
 .leftSection .blue {
   font-size: 3rem;
   font-weight: 100;
-  color: rgb(17, 135, 223);
+  color: rgb(101 171 224);
 }
 .leftSection .focus-gradient {
-  color: rgb(50, 157, 238);
+  color: rgb(131 191 236);
   font-weight: bold;
    background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
   background-clip: text;
@@ -164,43 +164,55 @@ nav ul li a:hover {
   width: 100%;
   margin: 0 0 0 50px;
 }
+
+/* Second Section */
+
 .secondSection {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   width: 100vw;
   height: 85vh;
-  margin: auto;
   pointer-events: none;
 }
-.secondSection .leftSection {
+
+.second-section-container {
+  height: 70%;
+  width: 80%;
+  display: flex;
+}
+
+.second-section-container .leftSection {
   display: flex;
   align-items: center;
+  justify-content: right;
   width: 45%;
-  margin-right: -2%;
   pointer-events: none;
-}
-.secondSection .rightSection {
+} 
+.second-section-container .rightSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 35%;
-  margin-right: 2%;
+  flex-grow: 1;
+} 
+.second-section-container img {
+  margin-right: 3%;
+  height: 80%;
 }
-.secondSection img {
-  width: 100%;
-}
-.secondSection h1 {
+
+.second-section-container h1 {
   font-size: 3rem;
   font-weight: bold;
   color: aliceblue;
 }
 .text-gradient-blue-white {
-  background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
+  background:linear-gradient(to left,rgb(96 186 253),floralwhite) ;
   background-clip: text;
   -webkit-background-clip : text ;
   -webkit-text-fill-color: transparent;
-}
+  font-weight: 500;
+} 
 
 /* Style for the Contact Section */
 .contactSection {
@@ -216,8 +228,8 @@ nav ul li a:hover {
 }
 
 .contactSection div p {
-  color: #8ddcff;
-  margin-bottom: 30px;
+  color: rgb(144, 198, 239);
+  margin: 15px 0 25px;
 }
 
 
@@ -229,7 +241,7 @@ nav ul li a:hover {
 }
 
 .leftContact img {
-  width: 50%;
+  width: 70%;
   object-fit: contain;
 }
 
