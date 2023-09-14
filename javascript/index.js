@@ -36,8 +36,10 @@ function toggle(x) {
     for (let i = 0; i < elements.length; i++) {
       elements[i].classList.add('blurred');
     }
+    
     document.getElementById('popup').classList.add('active');  
     document.getElementById('contact').scrollIntoView();  
+
   }
   else {
     for (let i = 0; i < elements.length; i++) {

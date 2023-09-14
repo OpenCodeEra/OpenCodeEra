@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(24, 25, 26);
+  color: rgb(16, 138, 228);
+  font-family: "Poppins", sans-serif;
+
+}
+
 img, .disable-selection ,br {
   user-select: none;
 }
@@ -15,28 +27,17 @@ h2::selection {
 p::selection {
   color: rgb(255, 255, 255);
   background: rgba(0, 136, 255, 0.2);
+
 }
 
-p {
-  font-size: 1.5rem;
+body::-webkit-scrollbar {
+  width: 0.25rem;
 }
 
-h2 {
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
+body::-webkit-scrollbar-track {
+  background: #18191a;
 }
 
-
-body {
-  background-color: rgb(24, 25, 26);
-  color: rgb(16, 138, 228);
-  font-family: "Poppins", sans-serif;
-}
-
-html{
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
 
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -53,20 +54,22 @@ body::-webkit-scrollbar-thumb {
 
 .header-push-down {
   height: 8vh;
+  /* width: 100vw; */
 }
 
 header{
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
 }
+
 main hr {
   border: 0;
   background-color: aliceblue;
   height: 0.8px;
   margin: 28px 80px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -75,10 +78,12 @@ nav {
   background-color: rgb(24, 25, 26);
   padding: 0 40px;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
   list-style: none;
   margin: 0 30px;
@@ -90,33 +95,38 @@ nav ul li[href="services.html"] {
 
 nav ul li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.829);
+  color: white;
 }
+
 nav ul li a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
-  transition: 0.4s;
 }
+
 .left {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .left img {
   height: 80px;
 }
+
 .left .blue {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: rgb(17, 135, 223);
 }
+
 .left .white {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: aliceblue;
 }
+
 .left a {
   text-decoration: none;
 }
@@ -128,7 +138,7 @@ nav ul li a:hover {
   align-items: center;
   height: 75vh;
 }
-.firstsection .leftSection {
+.leftSection {
   display: flex;
   align-items: center;
   width: 57%;
@@ -166,29 +176,18 @@ nav ul li a:hover {
 }
 .secondSection {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  width: 100vw;
+  align-content: space-around;
+  width: 90vw;
   height: 85vh;
   margin: auto;
   pointer-events: none;
 }
-.secondSection .leftSection {
-  display: flex;
-  align-items: center;
-  width: 45%;
-  margin-right: -2%;
-  pointer-events: none;
-}
 .secondSection .rightSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 35%;
-  margin-right: 2%;
+  width: 40%;
+  margin: 150px 0;
 }
 .secondSection img {
-  width: 100%;
+  width: 95%;
 }
 .secondSection h1 {
   font-size: 3rem;
@@ -196,6 +195,7 @@ nav ul li a:hover {
   color: aliceblue;
 }
 .text-gradient-blue-white {
+  font-size: 1.5rem;
   background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
   background-clip: text;
   -webkit-background-clip : text ;
@@ -204,25 +204,28 @@ nav ul li a:hover {
 
 /* Style for the Contact Section */
 .contactSection {
-  box-sizing: border-box;
-  width: 100vw;
-  padding: 130px 10vw;
+  padding: 130px;
+  background-color: rgb(24, 25, 26);
   text-align: center;
+  transition: 0.5s;
   display: flex;
   justify-content:center;
   align-items: center;
   gap: 8%;
+
   transition: 0.5s;
   transition: 0.5s;
 }
 
 .contactSection div h2 {
+
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
 }
 
 .contactSection div p {
-  color: #8ddcff;
+  font-size: 20px;
+  color: rgb(50, 157, 238);
   margin-bottom: 30px;
 }
 
@@ -230,57 +233,48 @@ nav ul li a:hover {
 .leftContact {
   width: 60%;
 }
-.rightContact {
-  width: 40%;
+
+.contactContainer div {
+  max-width: 500px;
 }
 
-.leftContact img {
-  width: 50%;
+.contactContainer div img {
+  width: 80%;
   object-fit: contain;
+}
+
+/* Style for the form */
+form {
+  max-width: 500px;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  box-sizing: border-box;
   width: 100%;
-  padding: 10px ;
-  margin-bottom: 32px;
+  padding: 10px;
+  margin-bottom: 40px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif, "Poppins", sans-serif;
-}
-
-input:focus, textarea:focus  {
-  outline: none;
-  border: 1.5px solid #007bff !important;
-}
-
-input::selection, textarea::selection {
-  color: rgb(255, 255, 255);
-  background: rgb(12, 134, 153);
+  font-size: 16px;
 }
 
 form textarea {
   resize: none;
 }
 
-form button[type="submit"] , #close {
+form button[type="submit"] {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 12px;
-  font-size: 20px;
-  font-weight: bolder;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  user-select: none;
 }
 
-form button[type="submit"]:hover , #close:hover {
+form button[type="submit"]:hover {
   background-color: #0056b3;
-  transition: 0.15s;
 }
 
 #popup {
@@ -290,35 +284,28 @@ form button[type="submit"]:hover , #close:hover {
   transform: translate(-50%, -50%);
   background-color: #242526;
   padding: 40px;
-  box-shadow: 2px 2px 15px 0px #243f59;
-  color: white;
+  box-shadow: 0 5px 30px ;
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
-  border-radius: 2%;
 }
 
-#popup p {
-  font-size: 1rem;
-}
-
-#close {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.blurred {
-  filter: blur(2px);
+.contactSection.active {
+  filter: blur(20px);
   pointer-events: none;
   user-select: none;
   overflow: hidden;
-  transition: 0.5s;
 }
 
 #popup.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+  padding: 40px;
+  box-shadow: 0 5px 30px ;
   visibility: visible;
   opacity: 1;
-  transition: 0.5s;
 }
 
 /* Responsive styles */
@@ -367,8 +354,7 @@ footer .footer-rights{
   align-items: center;
 }
 .footer-fourth a:hover img{
-  opacity: 0.7;
-  transition: 0.5s;
+  opacity: 0.5;
 }
 
 .footer-fourth a img {
