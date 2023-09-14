@@ -82,10 +82,27 @@
         </section>
         <hr>
         <section class="contactSection" id="contact">
-            <div class="leftContact">
-                <h2>Get in Touch!</h2>
-                <p>If you have any questions or inquiries, please feel free to get in touch with us.</p>
-                <img src="./images/illustrations/Get in touch.png" alt="Get In Touch">
+            <div class="contactContainer">
+                <div>
+                    <h2>Get in Touch!</h2>
+                    <p>If you have any questions or inquiries, please feel free to get in touch with us.</p>
+                    <img src="./images/illustrations/Get in touch.png" alt="Get In Touch">
+                </div>
+                <div>
+                    <form id="messageForm">
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+        
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+        
+                        <!-- <label for="message">Message:</label> -->
+                        <textarea id="message" name="message" rows="8" placeholder="Message" required></textarea>
+        
+                        <button id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+
             </div>
             <div class="rightContact">
                 <form id="messageForm">
