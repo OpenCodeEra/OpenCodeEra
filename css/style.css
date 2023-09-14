@@ -234,9 +234,6 @@ nav ul li a:hover {
 }
 
 /* Style for the form */
-form {
-  /* max-width: 100%; */
-}
 
 form input[type="text"],
 form input[type="email"],
