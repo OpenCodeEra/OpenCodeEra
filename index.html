@@ -32,7 +32,7 @@
 <body>
     <!-- This div pushes down header a little bit so that header is not sticky from start -->
     <div class="header-push-down"></div>
-    <header>
+    <header class="blur disable-selection">
         <nav>
             <div class="left">
                 <img src="images/icon/icon.png" alt="OpenCodeEra logo" />
@@ -54,8 +54,8 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="firstsection">
+    <main class="blur">
+        <section class="firstsection disable-selection">
             <div class="leftSection">
                 <div class="white">
                     <span class="blue">Welcome! </span>Contributors,
@@ -73,10 +73,10 @@
                 <img src="images/illustrations/goals.png" alt="goals">
             </div>
             <div class="rightSection">
-                <h1>Our Mission</h1>
+                <h2>Our Mission</h2>
                 <span class="text-gradient-blue-white">
-                    Open Code Era is an initiative to foster a culture of open source coding among developer
-                    community.
+                    <p>Open Code Era is an initiative to foster a culture of open source coding among developer
+                        community.</p>
                 </span>
             </div>
         </section>
@@ -102,13 +102,31 @@
                         <button id="submit" type="submit">Submit</button>
                     </form>
                 </div>
+
             </div>
-
-            
+            <div class="rightContact">
+                <form id="messageForm">
+                    <input type="text" id="name" name="name" placeholder="Name" >
+    
+                    <input type="text" id="email" name="email" placeholder="Email" >
+    
+                    <textarea id="message" name="message" rows="8" placeholder="Message"></textarea>
+    
+                    <button id="submit" type="submit" onclick="toggle('body')">Submit</button>
+                </form>
+                
+            </div>
+ 
+     
         </section>
-
     </main>
-    <footer>
+    <div id="popup">
+        <h2>Email Contact Service Inactive</h2><br>
+        <p>We apologize for the inconvenience, our email service is currently inactive. You may reach out to us through our social handles. Rest assured, the message you intended to send via email is stored on your side, ready to be sent once the service is activated. </p><br>
+        <button id="close" onclick="toggle()">Close</button>
+    </div>
+
+    <footer class="blur disable-selection">
         <div class="footer">
             <div class="footer-first">
                 <h3>Open Code Era</h3>
