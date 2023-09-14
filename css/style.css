@@ -249,6 +249,37 @@ form button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+  padding: 40px;
+  box-shadow: 0 5px 30px ;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contactSection.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#popup.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+  padding: 40px;
+  box-shadow: 0 5px 30px ;
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .contactContainer {
