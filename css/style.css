@@ -304,6 +304,7 @@ form button[type="submit"]:hover , #close:hover {
   opacity: 0;
   transition: 0.5s;
   border-radius: 2%;
+  z-index: 2;
 }
 
 #popup p {
