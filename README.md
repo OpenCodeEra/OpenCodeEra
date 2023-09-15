@@ -10,3 +10,9 @@ This repository contains the files of the homepage at https://opencodeera.pages.
 ### Tips to find your first issue to solve  
 - look at the list of `Good First Issues` here - https://github.com/OpenCodeEra/OpenCodeEra/contribute
 - To check status of all tasks - https://github.com/orgs/OpenCodeEra/projects/1
+
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/OpenCodeEra/OpenCodeEra/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=OpenCodeEra/OpenCodeEra"/>
+ </a>
