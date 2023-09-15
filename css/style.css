@@ -3,8 +3,20 @@
   padding: 0;
 }
 
+
 img, .disable-selection ,br {
   user-select: none;
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(24, 25, 26);
+  color: rgb(16, 138, 228);
+  font-family: "Poppins", sans-serif;
+
 }
 
 h2::selection {
@@ -16,7 +28,7 @@ p::selection {
   color: rgb(255, 255, 255);
   background: rgba(0, 136, 255, 0.2);
 }
-
+  
 p {
   font-size: 1.6rem;
 }
@@ -24,18 +36,6 @@ p {
 h2 {
   font-size: 2rem;
   color: rgb(255, 255, 255);
-}
-
-
-body {
-  background-color: rgb(24, 25, 26);
-  color: rgb(16, 138, 228);
-  font-family: "Poppins", sans-serif;
-}
-
-html{
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -61,12 +61,14 @@ header{
   width: 100%;
   z-index: 1;
 }
+
 main hr {
   border: 0;
   background-color: aliceblue;
   height: 0.8px;
   margin: 28px 80px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -75,10 +77,12 @@ nav {
   background-color: rgb(24, 25, 26);
   padding: 0 40px;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
   list-style: none;
   margin: 0 30px;
@@ -92,31 +96,37 @@ nav ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.829);
 }
+
 nav ul li a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
   transition: 0.4s;
 }
+
 .left {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .left img {
   height: 80px;
 }
+
 .left .blue {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: rgb(17, 135, 223);
 }
+
 .left .white {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: aliceblue;
 }
+
 .left a {
   text-decoration: none;
 }
@@ -220,18 +230,17 @@ nav ul li a:hover {
   width: 100vw;
   padding: 130px 10vw;
   text-align: center;
+  transition: 0.5s;
   display: flex;
   justify-content:center;
   align-items: center;
   gap: 8%;
-  transition: 0.5s;
 }
 
 .contactSection div p {
   color: rgb(144, 198, 239);
   margin: 15px 0 25px;
 }
-
 
 .leftContact {
   width: 60%;
@@ -327,6 +336,37 @@ form button[type="submit"]:hover , #close:hover {
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+  padding: 40px;
+  box-shadow: 0 5px 30px ;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contactSection.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#popup.active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242526;
+  padding: 40px;
+  box-shadow: 0 5px 30px ;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Responsive styles */

@@ -47,5 +47,3 @@ function toggle(x) {
   }
 }
 
-
-  
