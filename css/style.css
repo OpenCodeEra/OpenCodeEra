@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+img, .disable-selection ,br {
+  user-select: none;
+}
+
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -15,10 +19,6 @@ body {
 
 }
 
-img, .disable-selection ,br {
-  user-select: none;
-}
-
 h2::selection {
   color: rgb(255, 255, 255);
   background: rgba(0, 136, 255, 0.25);
@@ -27,17 +27,16 @@ h2::selection {
 p::selection {
   color: rgb(255, 255, 255);
   background: rgba(0, 136, 255, 0.2);
-
+}
+  
+p {
+  font-size: 1.6rem;
 }
 
-body::-webkit-scrollbar {
-  width: 0.25rem;
+h2 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
 }
-
-body::-webkit-scrollbar-track {
-  background: #18191a;
-}
-
 
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -54,22 +53,20 @@ body::-webkit-scrollbar-thumb {
 
 .header-push-down {
   height: 8vh;
-  /* width: 100vw; */
 }
 
 header{
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
-
 main hr {
   border: 0;
   background-color: aliceblue;
   height: 0.8px;
   margin: 28px 80px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -78,12 +75,10 @@ nav {
   background-color: rgb(24, 25, 26);
   padding: 0 40px;
 }
-
 nav ul {
   display: flex;
   justify-content: center;
 }
-
 nav ul li {
   list-style: none;
   margin: 0 30px;
@@ -95,38 +90,33 @@ nav ul li[href="services.html"] {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.829);
 }
-
 nav ul li a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
+  transition: 0.4s;
 }
-
 .left {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .left img {
   height: 80px;
 }
-
 .left .blue {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: rgb(17, 135, 223);
 }
-
 .left .white {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: aliceblue;
 }
-
 .left a {
   text-decoration: none;
 }
@@ -138,7 +128,7 @@ nav ul li a:hover {
   align-items: center;
   height: 75vh;
 }
-.leftSection {
+.firstsection .leftSection {
   display: flex;
   align-items: center;
   width: 57%;
@@ -150,10 +140,10 @@ nav ul li a:hover {
 .leftSection .blue {
   font-size: 3rem;
   font-weight: 100;
-  color: rgb(17, 135, 223);
+  color: rgb(101 171 224);
 }
 .leftSection .focus-gradient {
-  color: rgb(50, 157, 238);
+  color: rgb(131 191 236);
   font-weight: bold;
    background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
   background-clip: text;
@@ -174,107 +164,131 @@ nav ul li a:hover {
   width: 100%;
   margin: 0 0 0 50px;
 }
+
+/* Second Section */
+
 .secondSection {
   display: flex;
-  align-content: space-around;
-  width: 90vw;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
   height: 85vh;
-  margin: auto;
   pointer-events: none;
 }
-.secondSection .rightSection {
-  width: 40%;
-  margin: 150px 0;
+
+.second-section-container {
+  height: 70%;
+  width: 80%;
+  display: flex;
 }
-.secondSection img {
-  width: 95%;
+
+.second-section-container .leftSection {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 45%;
+  pointer-events: none;
+} 
+.second-section-container .rightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  flex-grow: 1;
+} 
+.second-section-container img {
+  margin-right: 3%;
+  height: 80%;
 }
-.secondSection h1 {
+
+.second-section-container h1 {
   font-size: 3rem;
   font-weight: bold;
   color: aliceblue;
 }
 .text-gradient-blue-white {
-  font-size: 1.5rem;
-  background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
+  background:linear-gradient(to left,rgb(96 186 253),floralwhite) ;
   background-clip: text;
   -webkit-background-clip : text ;
   -webkit-text-fill-color: transparent;
-}
+  font-weight: 500;
+} 
 
 /* Style for the Contact Section */
 .contactSection {
-  padding: 130px;
-  background-color: rgb(24, 25, 26);
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 130px 10vw;
   text-align: center;
-  transition: 0.5s;
   display: flex;
   justify-content:center;
   align-items: center;
   gap: 8%;
-
   transition: 0.5s;
-  transition: 0.5s;
-}
-
-.contactSection div h2 {
-
-  color: rgb(255, 255, 255);
-  margin-bottom: 20px;
 }
 
 .contactSection div p {
-  font-size: 20px;
-  color: rgb(50, 157, 238);
-  margin-bottom: 30px;
+  color: rgb(144, 198, 239);
+  margin: 15px 0 25px;
 }
 
 
 .leftContact {
   width: 60%;
 }
-
-.contactContainer div {
-  max-width: 500px;
+.rightContact {
+  width: 40%;
 }
 
-.contactContainer div img {
-  width: 80%;
+.leftContact img {
+  width: 70%;
   object-fit: contain;
 }
 
 /* Style for the form */
-form {
-  max-width: 500px;
-}
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
+  box-sizing: border-box;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 40px;
+  padding: 10px ;
+  margin-bottom: 32px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif, "Poppins", sans-serif;
+}
+
+input:focus, textarea:focus  {
+  outline: none;
+  border: 1.5px solid #007bff !important;
+}
+
+input::selection, textarea::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(12, 134, 153);
 }
 
 form textarea {
   resize: none;
 }
 
-form button[type="submit"] {
+form button[type="submit"] , #close {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bolder;
   cursor: pointer;
+  user-select: none;
 }
 
-form button[type="submit"]:hover {
+form button[type="submit"]:hover , #close:hover {
   background-color: #0056b3;
+  transition: 0.15s;
 }
 
 #popup {
@@ -284,28 +298,35 @@ form button[type="submit"]:hover {
   transform: translate(-50%, -50%);
   background-color: #242526;
   padding: 40px;
-  box-shadow: 0 5px 30px ;
+  box-shadow: 2px 2px 15px 0px #243f59;
+  color: white;
   visibility: hidden;
   opacity: 0;
+  transition: 0.5s;
+  border-radius: 2%;
 }
 
-.contactSection.active {
-  filter: blur(20px);
+#popup p {
+  font-size: 1rem;
+}
+
+#close {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.blurred {
+  filter: blur(2px);
   pointer-events: none;
   user-select: none;
   overflow: hidden;
+  transition: 0.5s;
 }
 
 #popup.active {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #242526;
-  padding: 40px;
-  box-shadow: 0 5px 30px ;
   visibility: visible;
   opacity: 1;
+  transition: 0.5s;
 }
 
 /* Responsive styles */
@@ -354,7 +375,8 @@ footer .footer-rights{
   align-items: center;
 }
 .footer-fourth a:hover img{
-  opacity: 0.5;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 .footer-fourth a img {
