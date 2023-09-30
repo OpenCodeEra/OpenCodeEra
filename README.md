@@ -19,14 +19,11 @@ This repository contains the files of the homepage at https://opencodeera.pages.
   </tr>
 </table>
 
-## How to contribute 
-- Fork the repo 
-- look for a issue to solve ( you can also submit a feature request or bug using issue section and then solve it )
-- open a PR (Pull Request) 
+## How to contribute? 🧐
 
-### Tips to find your first issue to solve  
-- look at the list of `Good First Issues` here - https://github.com/OpenCodeEra/OpenCodeEra/contribute
-- To check status of all tasks - https://github.com/orgs/OpenCodeEra/projects/1
+We recommend you to go through the [CONTRIBUTING.md](/CONTRIBUTING.md) file, where we have guided you step by step to make your contribution.
+
+Once the pull request is merged, it will start counting toward your Hacktoberfest progress.
 
 ## Thanks to all contributors ❤
 
