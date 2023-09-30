@@ -24,3 +24,8 @@ git clone https://github.com/OpenCodeEra/OpenCodeEra.git
 ### Tips to find your first issue to solve  
 - look at the list of `Good First Issues` here - https://github.com/OpenCodeEra/OpenCodeEra/contribute
 - To check status of all tasks - https://github.com/orgs/OpenCodeEra/projects/1
+
+
+### Tasks of a maintainer  
+- Opening well explained issues with appropriate tags 
+- Reviewing PR's and making sure you don't push any breaking changes into the `main` branch. 
