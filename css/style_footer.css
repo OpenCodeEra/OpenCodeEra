@@ -1,4 +1,5 @@
 footer {
+  position: relative;
   background-color:#242526;
   height: 180px;
 }
@@ -11,10 +12,22 @@ footer {
     text-decoration: none;
     list-style: none;
 }
+
+/* #43--> much presentable in desktop screen and otherwise */
+
 footer .footer-rights{
   text-align: center;
+  margin-top: 3rem;
   color: grey;
 } 
+
+@media screen and (max-width:776px){
+  footer .footer-rights {
+      text-align: center;
+      margin-top: 2rem;
+      color: grey;
+    }
+}
 .footer a {
   text-decoration: none;
   color: white;
