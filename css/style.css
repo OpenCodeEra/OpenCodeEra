@@ -247,6 +247,10 @@ nav ul li a:hover {
 
 /* Style for the form */
 
+#messageForm fieldset {
+  border: 0;
+}
+
 form input[type="text"],
 form input[type="email"],
 form textarea {
@@ -291,30 +295,6 @@ form button[type="submit"]:hover , #close:hover {
   transition: 0.15s;
 }
 
-#popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #242526;
-  padding: 40px;
-  box-shadow: 2px 2px 15px 0px #243f59;
-  color: white;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s;
-  border-radius: 2%;
-  z-index: 2;
-}
-
-#popup p {
-  font-size: 1rem;
-}
-
-#close {
-  width: 100%;
-  margin: 0 auto;
-}
 
 .blurred {
   filter: blur(2px);

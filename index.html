@@ -71,7 +71,7 @@
         <section class="secondSection" id="about">
 
             <div class="second-section-container">
-                  <div class="leftSection">
+                <div class="leftSection">
                     <!-- image from template.net -->
                     <img src="images/illustrations/goals.png" alt="goals">
             </div>
@@ -83,9 +83,10 @@
                     </span>
                 </div> 
             </div>
-
         </section>
+
         <hr>
+
         <section class="contactSection" id="contact">
             <div class="leftContact">
                 <h2>Get in Touch!</h2>
@@ -94,26 +95,18 @@
                 <img src="./images/illustrations/Get in touch.png" alt="Get In Touch">
             </div>
             <div class="rightContact">
-                <form id="messageForm">
-                    <input type="text" id="name" name="name" placeholder="Name" >
-    
-                    <input type="text" id="email" name="email" placeholder="Email" >
-    
-                    <textarea id="message" name="message" rows="8" placeholder="Message"></textarea>
-    
-                    <button id="submit" type="submit" onclick="toggle('body')">Submit</button>
+                <form id="messageForm" action="https://formspree.io/f/mwkdbzaq" method="post">
+                    <fieldset>
+                        <input type="text" name="name" id="name" placeholder="Name" required="">
+                        <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+                        <textarea rows="8" name="message" id="message" placeholder="Message" required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission [OpenCodeEra]">
+                    </fieldset>
+                    <button type="submit" id="submit">Submit</button>
                 </form>
-                
             </div>
- 
-     
         </section>
     </main>
-    <div id="popup">
-        <h2>Email Contact Service Inactive</h2><br>
-        <p>We apologize for the inconvenience, our email service is currently inactive. You may reach out to us through our social handles. Rest assured, the message you intended to send via email is stored on your side, ready to be sent once the service is activated. </p><br>
-        <button id="close" onclick="toggle()">Close</button>
-    </div>
 
     <footer class="blur disable-selection">
         <div class="footer">
