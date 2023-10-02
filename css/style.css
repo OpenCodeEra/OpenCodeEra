@@ -278,7 +278,7 @@ form textarea {
   resize: none;
 }
 
-form button[type="submit"] , #close {
+form button , #close {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
