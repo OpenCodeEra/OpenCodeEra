@@ -1,39 +1,84 @@
 footer {
-  position: relative;
-  background-color:#242526;
+  background-color: #242526;
   height: 180px;
+  width: 100%;
 }
+
 .footer {
   display: flex;
-  padding: 20px 50px;
-  justify-content: space-evenly ;
-}
-.footer ul{
-    text-decoration: none;
-    list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px 50px;
 }
 
-/* #43--> much presentable in desktop screen and otherwise */
-
-footer .footer-rights{
-  text-align: center;
-  margin-top: 3rem;
-  color: grey;
-} 
-
-@media screen and (max-width:776px){
-  footer .footer-rights {
-      text-align: center;
-      margin-top: 2rem;
-      color: grey;
-    }
+.footer ul {
+  list-style: none;
+  text-decoration: none;
 }
+
 .footer a {
   text-decoration: none;
   color: white;
 }
+
 .footer a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
   transition: 0.5s;
+}
+
+.footer-second a img {
+  width: 40px;
+}
+
+.footer .footer-leftside {
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.footer-rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-right: -10rem;
+}
+
+.footer-second {
+  margin-top: 2rem;
+}
+
+.footer-second a:hover img {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-second .github-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-rights {
+  color: hsl(0, 0%, 50%);
+}
+
+.footer-rights:hover {
+  color: hsl(0, 0%, 40%);
+}
+
+@media screen and (max-width:998px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-rightside {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
 }

@@ -344,42 +344,4 @@ form button[type="submit"]:hover , #close:hover {
   .footer {
     flex-wrap: wrap;
   }
-  .footer-fourth{
-    padding-top: 20px;
-  }
-}
-
-footer {
-  background-color:#242526;
-  height: 180px;
-}
-.footer {
-  display: flex;
-  padding: 20px 50px;
-  justify-content: space-evenly ;
-}
-.footer ul{
-    text-decoration: none;
-    list-style: none;
-}
-footer .footer-rights{
-  text-align: center;
-  color: grey;
-
-} 
-
-.footer-fourth{
-  display: flex;
-}
-.footer-fourth a{
-  display: flex;
-  align-items: center;
-}
-.footer-fourth a:hover img{
-  opacity: 0.7;
-  transition: 0.5s;
-}
-
-.footer-fourth a img {
-  width: 40px;
 }
