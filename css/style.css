@@ -225,7 +225,7 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-.third-container {
+.project-container {
   max-width: 1170px;
   margin: auto;
   display: flex;
@@ -253,12 +253,12 @@ nav ul li a:hover {
   height: 80px;
 }
 
-.card-tags::before {
+.project-tags::before {
   content: 'Tags: ';
 }
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
-  .third-container {
+  .project-container {
     width: 100%;
     flex-direction: column;
   }
