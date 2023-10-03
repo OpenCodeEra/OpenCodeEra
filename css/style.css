@@ -240,6 +240,56 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
+/* project section styles */
+
+#projects>h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#projects p {
+  font-size: 1rem;
+}
+
+.project-container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  flex-basis: 30%;
+  text-align: center;
+  margin: 12px 10px;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 5px 5px 5px rgb(17, 135, 223);
+  color: white;
+}
+
+.card-content {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.card img {
+  height: 80px;
+}
+
+.project-tags::before {
+  content: 'Tags: ';
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .project-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 /* Style for the Contact Section */
 .contactSection {
   box-sizing: border-box;
