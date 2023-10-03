@@ -303,8 +303,12 @@ form textarea {
   resize: none;
 }
 
+<<<<<<< HEAD
 form button[type="submit"],
 #close {
+=======
+form button , #close {
+>>>>>>> 6eac29f7b807c03c6e1fe807b540bf1adc14a06f
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
