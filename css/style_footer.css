@@ -7,6 +7,11 @@ footer {
   display: flex;
   padding: 20px 50px;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer img {
+  width: 2vw;
 }
 
 .footer ul {
