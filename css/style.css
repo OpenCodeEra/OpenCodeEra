@@ -2,16 +2,20 @@
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-img, .disable-selection ,br {
+
+img,
+.disable-selection,
+br {
   user-select: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -32,7 +36,7 @@ p::selection {
   color: rgb(255, 255, 255);
   background: rgba(0, 136, 255, 0.2);
 }
-  
+
 p {
   font-size: 1.6rem;
 }
@@ -51,26 +55,27 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #329cee17
-  ;
+  background: #329cee17;
 }
 
 .header-push-down {
   height: 8vh;
 }
 
-header{
+header {
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
 }
+
 main hr {
   border: 0;
   background-color: aliceblue;
   height: 0.8px;
   margin: 28px 80px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -79,10 +84,12 @@ nav {
   background-color: rgb(24, 25, 26);
   padding: 0 40px;
 }
+
 nav ul {
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
   list-style: none;
   margin: 0 30px;
@@ -96,31 +103,37 @@ nav ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.829);
 }
+
 nav ul li a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
   transition: 0.4s;
 }
+
 .left {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
 .left img {
   height: 80px;
 }
+
 .left .blue {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: rgb(17, 135, 223);
 }
+
 .left .white {
   font-size: 2rem;
   font-weight: 100;
   margin: 0 5px;
   color: aliceblue;
 }
+
 .left a {
   text-decoration: none;
 }
@@ -132,6 +145,7 @@ nav ul li a:hover {
   align-items: center;
   height: 75vh;
 }
+
 .firstsection .leftSection {
   display: flex;
   align-items: center;
@@ -141,29 +155,34 @@ nav ul li a:hover {
   font-size: 2.5rem;
   pointer-events: none;
 }
+
 .leftSection .blue {
   font-size: 3rem;
   font-weight: 100;
   color: rgb(101 171 224);
 }
+
 .leftSection .focus-gradient {
   color: rgb(131 191 236);
   font-weight: bold;
-   background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
+  background: linear-gradient(to left, rgb(17, 135, 223), floralwhite);
   background-clip: text;
-  -webkit-background-clip : text ;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 #element {
   font-weight: bold;
-   background:linear-gradient(to left,rgb(17, 135, 223),floralwhite) ;
-   background-clip: text;
-   -webkit-background-clip : text ;
+  background: linear-gradient(to left, rgb(17, 135, 223), floralwhite);
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .leftSection .white {
   font-size: 2.5rem;
 }
+
 .rightSection img {
   width: 100%;
   margin: 0 0 0 50px;
@@ -192,14 +211,16 @@ nav ul li a:hover {
   justify-content: right;
   width: 45%;
   pointer-events: none;
-} 
+}
+
 .second-section-container .rightSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 35%;
   flex-grow: 1;
-} 
+}
+
 .second-section-container img {
   margin-right: 3%;
   height: 80%;
@@ -210,13 +231,14 @@ nav ul li a:hover {
   font-weight: bold;
   color: aliceblue;
 }
+
 .text-gradient-blue-white {
-  background:linear-gradient(to left,rgb(96 186 253),floralwhite) ;
+  background: linear-gradient(to left, rgb(96 186 253), floralwhite);
   background-clip: text;
-  -webkit-background-clip : text ;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
-} 
+}
 
 /* Style for the Contact Section */
 .contactSection {
@@ -225,7 +247,7 @@ nav ul li a:hover {
   padding: 130px 10vw;
   text-align: center;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 8%;
   transition: 0.5s;
@@ -240,6 +262,7 @@ nav ul li a:hover {
 .leftContact {
   width: 60%;
 }
+
 .rightContact {
   width: 40%;
 }
@@ -256,7 +279,7 @@ form input[type="email"],
 form textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px ;
+  padding: 10px;
   margin-bottom: 32px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -264,12 +287,14 @@ form textarea {
   font-family: Arial, Helvetica, sans-serif, "Poppins", sans-serif;
 }
 
-input:focus, textarea:focus  {
+input:focus,
+textarea:focus {
   outline: none;
   border: 1.5px solid #007bff !important;
 }
 
-input::selection, textarea::selection {
+input::selection,
+textarea::selection {
   color: rgb(255, 255, 255);
   background: rgb(12, 134, 153);
 }
@@ -278,7 +303,8 @@ form textarea {
   resize: none;
 }
 
-form button[type="submit"] , #close {
+form button[type="submit"],
+#close {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -290,7 +316,8 @@ form button[type="submit"] , #close {
   user-select: none;
 }
 
-form button[type="submit"]:hover , #close:hover {
+form button[type="submit"]:hover,
+#close:hover {
   background-color: #0056b3;
   transition: 0.15s;
 }
@@ -337,49 +364,55 @@ form button[type="submit"]:hover , #close:hover {
 /* Responsive styles */
 @media (max-width: 768px) {
   .contactContainer {
-      display: block;
-      padding: 20px;
+    display: block;
+    padding: 20px;
   }
-  
+
   form {
-      padding: 0 10px;
+    padding: 0 10px;
   }
 
   .footer {
     flex-wrap: wrap;
   }
-  .footer-fourth{
+
+  .footer-fourth {
     padding-top: 20px;
   }
 }
 
 footer {
-  background-color:#242526;
+  background-color: #242526;
   height: 180px;
 }
+
 .footer {
   display: flex;
   padding: 20px 50px;
-  justify-content: space-evenly ;
+  justify-content: space-evenly;
 }
-.footer ul{
-    text-decoration: none;
-    list-style: none;
+
+.footer ul {
+  text-decoration: none;
+  list-style: none;
 }
-footer .footer-rights{
+
+footer .footer-rights {
   text-align: center;
   color: grey;
 
-} 
+}
 
-.footer-fourth{
+.footer-fourth {
   display: flex;
 }
-.footer-fourth a{
+
+.footer-fourth a {
   display: flex;
   align-items: center;
 }
-.footer-fourth a:hover img{
+
+.footer-fourth a:hover img {
   opacity: 0.7;
   transition: 0.5s;
 }

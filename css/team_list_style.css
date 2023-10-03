@@ -1,51 +1,61 @@
-p{
+p {
     color: white;
     font-weight: 600;
 
 }
-.cards{
+
+.cards {
     width: 70vw;
     padding: 10px;
     display: flex;
-    align-items:center ;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-#maintainers , .card_main,#contributors{
+
+#maintainers,
+.card_main,
+#contributors {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#team a{
+#team a {
     text-decoration: none;
 }
-.card_main{
-    height:30vh;
-    box-shadow: 3px 3px 4px 2px  rgb(149, 149, 149);
-    background: #ADA996;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+.card_main {
+    height: 30vh;
+    box-shadow: 3px 3px 4px 2px rgb(149, 149, 149);
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 25px;
     padding: 10px;
     margin: 10px;
     justify-content: space-around;
 }
-#contributors .card_main{
-    background: white ;
+
+#contributors .card_main {
+    background: white;
 }
-.card_main p{
+
+.card_main p {
     color: black;
     font-weight: 400;
 }
 
-#profile_img{
+#profile_img {
     width: 8vw;
     border-radius: 50%;
 }
-#social img{
+
+#social img {
     width: 3vw;
     margin: 2px;
     border-radius: 50%;
