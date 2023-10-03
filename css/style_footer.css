@@ -1,22 +1,26 @@
 footer {
   background-color: #242526;
-  height: 180px;
+}
+
+footer p {
+  color: gray;
+  font-size: 20px;
+  padding: 18px 0px;
+}
+
+footer h2 {
+  padding: 15px 0px;
 }
 
 .footer {
   display: flex;
-  padding: 20px 50px;
-  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 40px;
 }
 
 .footer ul {
   text-decoration: none;
   list-style: none;
-}
-
-footer .footer-rights {
-  text-align: center;
-  color: grey;
 }
 
 .footer a {
@@ -28,4 +32,78 @@ footer .footer-rights {
   text-decoration: none;
   color: rgb(16, 138, 228);
   transition: 0.5s;
+}
+
+/* left container styling */
+.footer .left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px;
+}
+
+.footer .left-container img {
+  height: 120px;
+  width: 120px;
+}
+
+.footer .left-container p a img {
+  height: 20px;
+  width: 25px;
+}
+
+.footer .center-container {
+  margin: 0px 0px 90px;
+}
+
+/* center container styling */
+footer .center-container li {
+  padding: 10px 5px;
+}
+
+
+/* right container */
+.footer .right-container {
+  margin: 75px 0px 0px 0px;
+  padding: 0px 0px 0px 65px;
+}
+
+.footer .right-container ul {
+  display: flex;
+}
+
+.footer .right-container ul li {
+  padding: 10px;
+}
+
+.footer .right-container ul li img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+
+.footer .right-container .github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer .right-container .github img {
+  width: 85px;
+  height: 100px;
+  margin: 0px 25px 0px 0px;
+}
+
+footer .copyRights {
+  width: 100vw;
+  text-align: center;
+  color: grey;
+}
+
+footer .copyRights p {
+  margin: 15px 5px;
+  padding: 20px 0px;
 }
