@@ -23,6 +23,9 @@ footer .footer-rights {
   text-decoration: none;
   color: white;
 }
+#githublogo{
+  width:22px;
+}
 
 .footer a:hover {
   text-decoration: none;
