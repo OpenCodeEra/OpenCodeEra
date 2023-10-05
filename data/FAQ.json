@@ -1,0 +1,15 @@
+[
+    {
+        "question":"What is Open Code Era?",
+        "answer":"We are a dynamic hub where creativity meets collaboration. Our mission is to create an inclusive environment that celebrates the spirit of open-source development. By advocating for transparency, sharing, and co-creation, we're reshaping the way software is built, one line of code at a time."
+    },
+    {
+        "question":"What is Open Source?",
+        "answer":"The term Open-source is closely related to Open-source software (OSS). Open-source software is a type of computer software that is released under a license, but the source code is made available to all the users. The copyright holders of such software allow the users to use it and do some valuable modifications in its source code to add some new features, to improve the existing features, and to fix bugs if there are any. Because of this reason only Open-source software is mostly developed collaboratively."
+    },
+    {
+        "question":"What is Hactoberfest?",
+        "answer":"Hacktoberfest is a month-long celebration of open-source projects, their maintainers, and the entire community of contributors."
+    }
+
+]
