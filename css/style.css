@@ -323,28 +323,45 @@ nav ul li a:hover {
 }
 
 /* Style for the form */
+.rightContact
+{
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#334bff, #40c9ff) border-box;
+  border: 3px solid transparent;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
 
-form input[type="text"],
-form input[type="email"],
+input[type="text"],
+input[type="email"],
 form textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 32px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif, "Poppins", sans-serif;
 }
 
 input:focus,
-textarea:focus {
+form textarea:focus {
   outline: none;
-  border: 1.5px solid #007bff !important;
+  border-color: #1c99ff;
 }
 
 input::selection,
-textarea::selection {
+form textarea::selection {
   color: rgb(255, 255, 255);
   background: rgb(12, 134, 153);
 }
@@ -353,7 +370,7 @@ form textarea {
   resize: none;
 }
 
-form button , #close {
+form button, #close {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -363,13 +380,14 @@ form button , #close {
   font-weight: bolder;
   cursor: pointer;
   user-select: none;
+  transition: background-color 0.15s;
 }
 
 form button[type="submit"]:hover,
 #close:hover {
   background-color: #0056b3;
-  transition: 0.15s;
 }
+
 
 #popup {
   position: fixed;
