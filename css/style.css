@@ -81,9 +81,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background-color: rgb(24, 25, 26);
+  background-color: rgb(21 34 47);
+  border-top:1px solid azure;
+  border-bottom:1px solid azure;
   padding: 0 40px;
 }
+
 
 nav ul {
   display: flex;
@@ -108,6 +111,11 @@ nav ul li a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
   transition: 0.4s;
+ 
+}
+#abt:hover{
+  font-size:18.45px;
+  transition:0.5s;
 }
 
 .left {
@@ -454,6 +462,7 @@ footer .footer-rights {
 
 .footer-fourth {
   display: flex;
+  align-items:baseline;
 }
 
 .footer-fourth a {
@@ -467,5 +476,6 @@ footer .footer-rights {
 }
 
 .footer-fourth a img {
-  width: 40px;
+  width: 22px;
 }
+
