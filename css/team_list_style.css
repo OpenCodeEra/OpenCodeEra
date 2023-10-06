@@ -27,18 +27,18 @@ p {
 }
 
 .card_main {
-    height: 30vh;
-    box-shadow: 3px 3px 4px 2px rgb(149, 149, 149);
-    background: #ADA996;
+    height: 28vh;
+    box-shadow: 0px 0px 12px 4px #699cc8;
+    background: azure;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 25px;
+    border-radius: 50%;
     padding: 10px;
     margin: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #contributors .card_main {
@@ -48,15 +48,25 @@ p {
 .card_main p {
     color: black;
     font-weight: 400;
+    font-style:italic;
 }
 
 #profile_img {
-    width: 8vw;
+
+    width: 6vw;
     border-radius: 50%;
 }
 
 #social img {
-    width: 3vw;
+    width: 2vw;
     margin: 2px;
-    border-radius: 50%;
+    border-radius: 10px;
 }
+#social img:hover{
+    width:2.35vw;
+    border:1px solid rgb(112, 112, 212);
+  }
+.card_main p :hover{
+   font-weight:700;
+  }
+
