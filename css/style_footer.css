@@ -1,4 +1,5 @@
 footer {
+  border-top:1px solid azure;
   background-color: #242526;
   height: 180px;
 }
@@ -23,12 +24,12 @@ footer .footer-rights {
   text-decoration: none;
   color: white;
 }
-#githublogo{
-  width:22px;
-}
 
 .footer a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
   transition: 0.5s;
+}
+#githublogo{
+   width:22px;
 }
