@@ -633,13 +633,18 @@ article img {
 
 .article-body {
   padding: 24px;
+  position: relative;
+  min-height: 250px;
 }
+
 
 article a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: #1187df;
+  position: absolute;
+  bottom: 20px;
 }
 
 article a:focus {
