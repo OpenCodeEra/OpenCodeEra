@@ -8,6 +8,11 @@ footer {
   display: flex;
   padding: 20px 50px;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer img {
+  width: 2vw;
 }
 
 .footer ul {
@@ -28,8 +33,6 @@ footer .footer-rights {
 .footer a:hover {
   text-decoration: none;
   color: rgb(16, 138, 228);
-  transition: 0.5s;
+  transition: 0.5s
 }
-#githublogo{
-   width:22px;
-}
+
