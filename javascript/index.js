@@ -5,6 +5,16 @@ var typed = new Typed("#element", {
 
 const elements = document.getElementsByClassName("blur");
 
+function ScrollToProject(){
+  const projects = document.querySelector("#projects")
+  const position = projects.offsetTop - document.querySelector("nav").clientHeight;
+
+  window.scrollTo({
+    top: position - 40, // To adjust the position with <hr> tag
+    behavior: "smooth"
+  })
+}
+
 function toggle(x) {
   if (x) {
     for (let i = 0; i < elements.length; i++) {
