@@ -770,3 +770,8 @@ article:has(:hover, :focus) {
   text-decoration: none;
   font-weight: bold;
 }
+
+footer .copy-right a {
+  text-decoration: none;
+  color: #757575;
+}
