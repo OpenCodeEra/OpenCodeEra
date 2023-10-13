@@ -60,7 +60,7 @@
             <a class="about" href="#about">About</a>
           </li>
           <li>
-            <a class="services" target="_blank" href="https://github.com/orgs/OpenCodeEra/repositories">Projects</a>
+            <a class="services" href="javascript:void(0);" onclick="ScrollToProject()">Projects</a>
           </li>
           <li>
             <a href="team_list.html"> Team </a>
@@ -116,43 +116,80 @@
 
     <section id="projects">
       <h2>Our Projects</h2>
-      <div class="project-container">
-        <div class="cardP">
-          <img src="images/icon/icon.png" alt="project image" />
-
-          <h2 class="card-title">Project-1</h2>
-          <p class="card-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-            natus assumenda quam reiciendis aperiam debitis minus, excepturi
-            libero reprehenderit provident saepe! Eaque quasi dolores dicta
-            neque repellat, nemo excepturi optio.
-          </p>
-          <p class="project-tags">Html, Css, Javscript</p>
-        </div>
-        <div class="cardP">
-          <img src="images/icon/icon.png" alt="project image" />
-
-          <h2 class="card-title">Project-2</h2>
-          <p class="card-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-            natus assumenda quam reiciendis aperiam debitis minus, excepturi
-            libero reprehenderit provident saepe! Eaque quasi dolores dicta
-            neque repellat, nemo excepturi optio.
-          </p>
-          <p class="project-tags">Html, Css, Javscript</p>
-        </div>
-        <div class="cardP">
-          <img src="images/icon/icon.png" alt="project image" />
-
-          <h2 class="card-title">Project-3</h2>
-          <p class="card-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-            natus assumenda quam reiciendis aperiam debitis minus, excepturi
-            libero reprehenderit provident saepe! Eaque quasi dolores dicta
-            neque repellat, nemo excepturi optio.
-          </p>
-          <p class="project-tags">Html, Css, Javscript</p>
-        </div>
+      <div class="projects_body">
+        <section class="articles">
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="images/FC.png" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>First-Contribution</h2>
+                <p>
+                  A repo where you can make your first contribution and get a contributors card in our website.
+                </p>
+                <a href="https://github.com/OpenCodeEra/First-Contribution" class="read-more" target="_blank">
+                  Check out GitHub Repo <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="images/GPA.png" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>GitHub-Profile-Achievements</h2>
+                <p>
+                  A collection listing all Achievements available on the GitHub profile and how to earn them.
+                </p>
+                <a href="https://github.com/OpenCodeEra/GitHub-Profile-Achievements" class="read-more" target="_blank">
+                  Check out GitHub Repo <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="images/ML.png" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>ML-X</h2>
+                <p>
+                  Dive into a rich assortment of machine learning models, perfect for learners and experts alike.
+                </p>
+                <a href="https://github.com/OpenCodeEra/ML-X" class="read-more" target="_blank">
+                  Check out GitHub Repo <span class="sr-only">about this is some title</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="view_more__projects">
+        <a href="https://github.com/orgs/OpenCodeEra/repositories" target="_blank">View More</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+            clip-rule="evenodd" />
+        </svg>
       </div>
     </section>
 
@@ -182,7 +219,7 @@
 
     <hr />
 
-    <section id="faq">
+    <section id="faq" class="mt-5 mb-5">
       <h2>Frequently Asked Question</h2>
       <div id="faq_box">
         <div class="content">
@@ -234,11 +271,11 @@
         </div>
     </footer> -->
 
-  <footer>
+  <footer class="mt-5">
     <div class="row">
       <div class="col-md-4 col-sm-6 footer-div" style="text-align: center">
         <img src="images/icon/icon.png" id="footer-logo" />
-        <p id="footer-name">Open Code Era</p>
+        <p id="footer-name">Open <span>Code</span> Era</p>
         <a href="mailto:openera@myyahoo.com" id="mail-footer">
           <i class="fa-regular fa-envelope"></i> openera@myyahoo.com
         </a>

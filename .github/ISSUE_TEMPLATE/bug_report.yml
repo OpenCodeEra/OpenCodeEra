@@ -1,0 +1,13 @@
+name: 🐛 Bug  
+description: Report a bug and help improve the project!
+labels: ["bug"]
+title: "[BUG 🐞] <description>"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A brief description of the bug.
+      placeholder: Enter your description
+    validations:
+      required: true
