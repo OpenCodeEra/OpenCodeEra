@@ -771,3 +771,121 @@ article:has(:hover, :focus) {
   text-decoration: none;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    header nav {
+        padding: 0 20px;
+    }
+
+    .left img {
+        height: 60px;
+    }
+
+    .left .blue,
+    .left .white {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    main hr {
+        margin: 20px 20px;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .firstsection .leftSection {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .firstsection .leftSection .blue,
+    .firstsection .leftSection .white {
+        font-size: 1.8rem;
+    }
+
+    .firstsection .rightSection img {
+        margin: 20px 0;
+    }
+
+    .second-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-section-container .leftSection {
+        width: 100%;
+        margin: 0;
+    }
+
+    .second-section-container .rightSection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-section-container h1 {
+        font-size: 2rem;
+    }
+
+    .text-gradient-blue-white {
+        font-size: 1rem;
+    }
+
+    .contactSection {
+        padding: 80px 20px;
+    }
+
+    .contactSection .leftContact img {
+        width: 100%;
+    }
+
+    .rightContact {
+        width: 100%;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        font-size: 16px;
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+
+    form button[type="submit"],
+    #close {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    footer .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer ul {
+        text-align: center;
+    }
+
+    .footer-fourth {
+        padding-top: 20px;
+    }
+
+    .footer-fourth a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-fourth a img {
+        width: 30px;
+    }
+}
