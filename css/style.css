@@ -343,6 +343,7 @@ nav ul li a:hover {
 input[type="text"],
 input[type="email"],
 form textarea {
+  margin: 5px 5px;
   box-sizing: border-box;
   width: 100%;
   padding: 12px 16px;
