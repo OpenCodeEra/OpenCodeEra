@@ -72,26 +72,26 @@ form.addEventListener("submit", handleSubmit);
 menuimg=document.querySelector('.menuimg');
 navul=document.querySelector('.navul');
 navlis=document.querySelectorAll('.navli');
-menuimg.addEventListener('click',()=>{
-  menuimg.src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png"
-  menuimg.style.height='34px';
-  console.log("working");
-  if(navul.style.display=='block'){
-  navul.style.display='none';
-  }
-  else{
-    navul.style.display='block';
-  }
+// menuimg.addEventListener('click',()=>{
+//   menuimg.src="https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png"
+//   menuimg.style.height='34px';
+//   console.log("working");
+//   if(navul.style.display=='block'){
+//   navul.style.display='none';
+//   }
+//   else{
+//     navul.style.display='block';
+//   }
     
-})
-navlis.forEach(navli=>{
-  navli.addEventListener('click',()=>{
-    navul.style.display='none';
-    menuimg.src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png";
-    menuimg.style.height='40px';
+// })
+// navlis.forEach(navli=>{
+//   navli.addEventListener('click',()=>{
+//     navul.style.display='none';
+//     menuimg.src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png";
+//     menuimg.style.height='40px';
 
 
-  })
+//   })
   
-})
+// })
 
