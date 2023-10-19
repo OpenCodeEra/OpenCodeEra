@@ -77,16 +77,20 @@ menuimg.addEventListener('click',()=>{
   menuimg.style.height='34px';
   console.log("working");
   if(navul.style.display=='block'){
-  navul.style.display='none';
+  // navul.style.display='none';
+  navul.style.visibility = "visible";
   }
   else{
     navul.style.display='block';
+    navul.style.visibility = "visible";
+    // navul.style.visibility = "hidden";
   }
     
 })
 navlis.forEach(navli=>{
   navli.addEventListener('click',()=>{
-    navul.style.display='none';
+    // navul.style.display='none';
+    navul.style.visibility = "visible";
     menuimg.src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png";
     menuimg.style.height='40px';
 
