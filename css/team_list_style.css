@@ -5,8 +5,8 @@ p {
 }
 
 .cards {
-    width: 70vw;
-    padding: 10px;
+    width: 100vw;
+    padding: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -27,8 +27,9 @@ p {
 }
 
 .card_main {
-    height: 28vh;
-    box-shadow: 0px 0px 12px 4px #699cc8;
+    height: 30vh;
+    width: 43vh;
+    box-shadow: 0px 0px 10px 3px #699cc8;
     background: azure;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
@@ -36,9 +37,17 @@ p {
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 50%;
-    padding: 10px;
-    margin: 10px;
+    padding: 30px;
+    margin: 30px;
     justify-content: space-evenly;
+    transition: 1s;
+}
+
+.card_main:hover{
+    height: 35vh;
+    width: 46vh;
+    box-shadow: 0px 0px 15px 6px #699cc8;
+
 }
 
 #contributors .card_main {
