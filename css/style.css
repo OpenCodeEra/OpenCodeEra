@@ -784,6 +784,49 @@ article:has(:hover, :focus) {
   text-decoration: none;
   font-weight: bold;
 }
+.menubar{
+  display: none;
+}
+@media screen and (max-width:430px) {
+  .menubar{
+    display: block;
+    cursor: pointer;
+    padding-left: space-evenly;
+  }
+
+  
+  .navul{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    display: none;
+  }
+  nav ul {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 125px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px;
+  }
+  nav ul li {
+    font-size: 1.15rem;
+    list-style: none;
+    margin: 12px -26px;
+  }
+}
+
+@media screen and (min-width:431px) {
+  #nav{
+    display: flex !important;
+  }
+  .navul{
+    display: flex !important;
+  }
+}
+
 @media only screen and (max-width:1032px) {
   
   .header-push-down {
@@ -820,17 +863,7 @@ article:has(:hover, :focus) {
       margin: 0 5px;
       color: rgb(17, 135, 223);
   }
-  .menubar{
-    display: block;
-    cursor: pointer;
-    padding-left: space-evenly;
-  }
-
-  .navul{
-    top: 20px;
-    display: none;
-    height: 86vh;
-  }
+  
 
   .firstsection {
       display: flex;
@@ -908,26 +941,7 @@ article:has(:hover, :focus) {
     margin-bottom: 8px;
     margin-left: 54px;
   }
-  nav ul {
-    background-color: black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    z-index: 9;
-    height: 96px;
-    margin-left: -123px;
-    width: 125px;
-    margin-top: 256px;
-    border: 1px solid;
-    border-radius: 10px;
-    box-shadow: 0px 0px 4px 2px;
-  }
-  nav ul li {
-    font-size: 1.15rem;
-    list-style: none;
-    margin: 12px -26px;
-  }
+  
 
 
 
