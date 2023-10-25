@@ -63,7 +63,7 @@ p {
     border-radius: 10px;
 }
 #social img:hover{
-    width:2.35vw;
+    transform: scale(1.2);
     border:1px solid rgb(112, 112, 212);
   }
 .card_main p :hover{
