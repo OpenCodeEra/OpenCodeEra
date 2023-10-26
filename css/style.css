@@ -115,10 +115,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: rgb(16, 138, 228);
   transition: 0.4s;
 }
+
 .menubar {
   cursor: pointer;
   display: none;
