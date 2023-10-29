@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header-push-down {
-  height: 1vh;
+  height: 0%;
 }
 
 header {
