@@ -19,6 +19,8 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/faq.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- <link
             rel="stylesheet"
             href="css/style_footer.css"
@@ -38,6 +40,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet" />
+  <style>
+    span {
+        cursor: pointer;
+    }
+</style>
 </head>
 
 <body>
@@ -47,16 +54,18 @@
   <header class="blur disable-selection">
     <nav>
       <div class="left">
-        <img src="images/icon/icon.png" alt="OpenCodeEra logo" />
+        <a href="">
+          <img src="images/icon/icon.png" alt="OpenCodeEra logo" />
+        </a>
         <a href="index.html">
           <span class="blue">Open</span>
           <span class="white">Code</span>
           <span class="blue">Era</span>
         </a>
       </div>
-      <div class="menubar"><img src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color/254000/30-512.png" alt="menu" class="menuimg"></div>
+
       <div class="right">
-        <ul class="navul">
+        <ul class="navul" id="nav">
           <li class="navli" class="about"><a  href="#about">About</a></li>
           <li class="navli" class="services"><a  href="javascript:void(0);" onclick="ScrollToProject()">Projects</a></li>
           <li class="navli"><a href="team_list.html"> Team </a></li>
@@ -65,15 +74,16 @@
         </ul>
       </div>
     </nav>
+
   </header>
   <main class="blur">
     <section class="firstsection disable-selection">
       <div class="leftSection">
         <div class="white">
-          <span class="blue">Welcome! </span>Contributors, Elevate Your Impact
+          <span class="blue">Welcome ! </span>Contributors, Elevate Your Impact
           with <span class="focus-gradient">Open Source</span>
           <span id="element"></span>
-        </div>
+         </div>
       </div>
 
       <div class="rightSection">
@@ -117,7 +127,7 @@
               <div class="article-body">
                 <h2>First-Contribution</h2>
                 <p>
-                  A repo where you can make your first contribution and get a contributors card in our website.
+                  A repo where you can make your first open source contribution and get a contributors card in our website.
                 </p>
                 <a href="https://github.com/OpenCodeEra/First-Contribution" class="read-more" target="_blank">
                   Check out GitHub Repo <span class="sr-only">about this is some title</span>
@@ -287,12 +297,12 @@
           <a href="https://github.com/OpenCodeEra" target="_blank">
             <i class="fa-brands fa-github"> </i>
           </a>
-          <a href="#">
+          <!-- <a href="#">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
           <a href="#">
             <i class="fa-brands fa-instagram"></i>
-          </a>
+          </a> -->
         </div>
 
         <div id="contribution-div">
@@ -311,6 +321,7 @@
   </footer>
   <script src="./javascript/index.js"></script>
   <script src="javascript/faq.js"></script>
+  <script src="javascript/menu.js"></script>
 </body>
 
 </html>
