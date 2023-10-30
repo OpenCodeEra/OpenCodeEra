@@ -19,6 +19,7 @@ br {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -80,7 +81,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 90px;
   background-color: #18191a;
   padding: 0 40px;
 
@@ -159,6 +160,7 @@ nav ul li a:hover {
   justify-content: space-around;
   align-items: center;
   height: 90vh;
+  scroll-snap-align: start;
 }
 
 .firstsection .leftSection {
@@ -212,6 +214,8 @@ nav ul li a:hover {
   width: 100vw;
   height: 85vh;
   pointer-events: none;
+  padding-top: 20px;
+  scroll-snap-align: start;
 }
 
 .second-section-container {
@@ -256,7 +260,10 @@ nav ul li a:hover {
 }
 
 /* project section styles */
-
+#projects{
+   scroll-snap-align: start;
+   padding-top: 100px;
+}
 #projects>h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -319,6 +326,7 @@ nav ul li a:hover {
   align-items: center;
   gap: 8%;
   transition: 0.5s;
+  scroll-snap-align: start;
 }
 
 .contactSection div p {
@@ -510,7 +518,7 @@ footer .footer-rights {
 } */
 footer {
   background-color: #242526;
-  padding: 2% 5% 4%;
+  padding: 2% 3% 3%;
   margin: 0;
   width: 100%;
 }
