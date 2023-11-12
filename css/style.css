@@ -81,7 +81,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  height: 70px;
   background-color: #18191a;
   padding: 0 40px;
 
@@ -803,7 +803,7 @@ article:has(:hover, :focus) {
     padding-left: space-evenly;
   }
 
-  
+
   .navul{
     position: absolute;
     top: 100px;
@@ -837,7 +837,7 @@ article:has(:hover, :focus) {
 }
 
 @media only screen and (max-width:1032px) {
-  
+
   .header-push-down {
       height: 0vh;
   }
@@ -872,7 +872,7 @@ article:has(:hover, :focus) {
       margin: 0 5px;
       color: rgb(17, 135, 223);
   }
-  
+
 
   .firstsection {
       display: flex;
@@ -950,7 +950,7 @@ article:has(:hover, :focus) {
     margin-bottom: 8px;
     margin-left: 54px;
   }
-  
+
 
 
 
