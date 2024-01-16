@@ -119,6 +119,8 @@ nav ul li a:hover {
   text-decoration: underline;
   color: rgb(16, 138, 228);
   transition: 0.4s;
+  border-bottom: 2px solid rgb(16, 138, 228);
+  border-radius: 20%;
 }
 
 .menubar {
